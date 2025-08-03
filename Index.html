@@ -130,28 +130,6 @@
             font-size: 0.9em;
             color: #a1e8ff;
         }
-        @media print {
-            @page {
-                size: A4 portrait;
-                margin: 1.5cm;
-            }
-            body {
-                -webkit-print-color-adjust: exact;
-                color-adjust: exact;
-                margin: 0;
-                padding: 0;
-            }
-            .container {
-                max-width: 100%;
-                margin: 0;
-                padding: 10px;
-                box-shadow: none;
-                border-radius: 0;
-            }
-            .erro {
-                page-break-inside: avoid;
-            }
-        }
     </style>
 </head>
 <body>
@@ -183,110 +161,26 @@
             <div class="rascunho">Anotações: COBIT → governança. ITIL → serviços.</div>
         </div>
 
-        <!-- ERRO 2 -->
-        <div class="erro">
-            <p class="titulo-erro">❌ Erro #2: Achar que IPv6 é mais rápido que IPv4</p>
-            <p class="banca">VUNESP – TCE-SP – 2024</p>
-            <p class="enunciado">O IPv6 foi criado principalmente para aumentar a velocidade de transmissão de dados na internet.</p>
-            <div class="alternativas">
-                <p>a) Certo</p>
-                <p>b) Errado</p>
-            </div>
-            <p class="gabarito">Gabarito: b) Errado</p>
-            <div class="comentario">
-                <span class="dica">💡 Dica Estratégica:</span> O IPv6 foi criado para <strong>expandir o espaço de endereçamento</strong>, não para aumentar a velocidade. A VUNESP cobra motivações reais das tecnologias. Pense: <strong>mais dispositivos conectados, não mais velocidade</strong>.
-            </div>
-            <div class="rascunho">Anotações: IPv6 → mais endereços, não mais velocidade.</div>
-        </div>
+        <!-- (Adicione os outros erros aqui) -->
 
-        <!-- ERRO 3 -->
-        <div class="erro">
-            <p class="titulo-erro">❌ Erro #3: Achar que UDP é orientado à conexão</p>
-            <p class="banca">FCC – TRT – 2023</p>
-            <p class="enunciado">O protocolo UDP é orientado à conexão e garante a entrega dos pacotes.</p>
-            <div class="alternativas">
-                <p>a) Certo</p>
-                <p>b) Errado</p>
-            </div>
-            <p class="gabarito">Gabarito: b) Errado</p>
-            <div class="comentario">
-                <span class="dica">💡 Dica Estratégica:</span> UDP é <strong>não orientado à conexão</strong> e <strong>não garante entrega</strong>. TCP é que faz isso. A FCC coloca "UDP" com características de TCP como armadilha. Pense: <strong>UDP = rápido, mas instável</strong>.
-            </div>
-            <div class="rascunho">Anotações: UDP → não orientado, sem garantia. TCP → sim.</div>
-        </div>
-
-        <!-- ERRO 4 -->
-        <div class="erro">
-            <p class="titulo-erro">❌ Erro #4: Achar que o uso de metodologias ágeis elimina a documentação</p>
-            <p class="banca">FCC – TRE-SP – 2023</p>
-            <p class="enunciado">O uso de metodologias ágeis elimina a necessidade de documentação em projetos de TI.</p>
-            <div class="alternativas">
-                <p>a) Certo</p>
-                <p>b) Errado</p>
-            </div>
-            <p class="gabarito">Gabarito: b) Errado</p>
-            <div class="comentario">
-                <span class="dica">💡 Dica Estratégica:</span> Ágil prioriza documentação <strong>suficiente</strong>, não <strong>nenhuma</strong>. Em TI pública, a documentação é essencial para <strong>auditoria, rastreabilidade e conformidade</strong>. A FCC testa se você entende que ágil não é ausência de processo.
-            </div>
-            <div class="rascunho">Anotações: Ágil → documentação suficiente, não nenhuma.</div>
-        </div>
-
-        <!-- ERRO 5 -->
-        <div class="erro">
-            <p class="titulo-erro">❌ Erro #5: Achar que a análise de stakeholders é opcional</p>
-            <p class="banca">CESPE – TCU – 2022</p>
-            <p class="enunciado">A análise de stakeholders é uma atividade opcional no início de um projeto de TI.</p>
-            <div class="alternativas">
-                <p>a) Certo</p>
-                <p>b) Errado</p>
-            </div>
-            <p class="gabarito">Gabarito: b) Errado</p>
-            <div class="comentario">
-                <span class="dica">💡 Dica Estratégica:</span> Identificar stakeholders (interessados) é <strong>crucial</strong> para o sucesso do projeto. Em TI pública, envolve áreas técnicas, jurídicas, operacionais. A CESPE cobra etapas iniciais de gestão de projetos.
-            </div>
-            <div class="rascunho">Anotações: Stakeholders → identificar no início.</div>
-        </div>
-
-        <!-- ERRO 6 -->
-        <div class="erro">
-            <p class="titulo-erro">❌ Erro #6: Achar que o Product Owner gerencia o time</p>
-            <p class="banca">VUNESP – TCE-SP – 2024</p>
-            <p class="enunciado">O Product Owner em um projeto ágil é responsável por gerenciar o time de desenvolvimento.</p>
-            <div class="alternativas">
-                <p>a) Certo</p>
-                <p>b) Errado</p>
-            </div>
-            <p class="gabarito">Gabarito: b) Errado</p>
-            <div class="comentario">
-                <span class="dica">💡 Dica Estratégica:</span> O Product Owner representa os interessados e prioriza o <strong>backlog de requisitos</strong>. Quem gerencia o time é o <strong>Scrum Master</strong>. A VUNESP confunde os papéis em metodologias ágeis.
-            </div>
-            <div class="rascunho">Anotações: PO → backlog. SM → time.</div>
-        </div>
-
-        <!-- ERRO 7 -->
-        <div class="erro">
-            <p class="titulo-erro">❌ Erro #7: Achar que o uso de software livre elimina a auditoria</p>
-            <p class="banca">FCC – TRE-SP – 2023</p>
-            <p class="enunciado">O uso de software livre elimina a necessidade de auditoria de TI.</p>
-            <div class="alternativas">
-                <p>a) Certo</p>
-                <p>b) Errado</p>
-            </div>
-            <p class="gabarito">Gabarito: b) Errado</p>
-            <div class="comentario">
-                <span class="dica">💡 Dica Estratégica:</span> Qualquer sistema, livre ou proprietário, precisa de auditoria para garantir <strong>segurança, conformidade e eficiência</strong>. A FCC testa se você generaliza. Auditoria é obrigatória em TI pública.
-            </div>
-            <div class="rascunho">Anotações: Auditoria → necessária para todo sistema.</div>
-        </div>
-
-        <!-- FORMULÁRIO DO FORMSPREE -->
+        <!-- FORMULÁRIO DE INSCRIÇÃO -->
         <div class="form-container">
             <h3>📩 Receba Mais Materiais Gratuitos</h3>
             <p>Inscreva-se e receba atualizações com dicas, questões e padrões de banca diretamente no seu e-mail.</p>
 
             <form action="https://formspree.io/f/manbdbrg" method="POST">
-                <input type="email" name="_replyto" placeholder="Seu melhor e-mail" required style="width: 100%; padding: 12px; margin: 10px 0; border: none; border-radius: 8px;">
-                <button type="submit" style="background:#ffd700; color:#1a2a6c; border:none; padding:12px 20px; border-radius:8px; font-weight:bold; cursor:pointer; width:100%;">Receber Agora</button>
+                <input 
+                    type="email" 
+                    name="_replyto" 
+                    placeholder="Seu melhor e-mail" 
+                    required 
+                    style="width: 100%; padding: 12px; margin: 10px 0; border: none; border-radius: 8px;"
+                >
+                <button 
+                    type="submit" 
+                    style="background:#ffd700; color:#1a2a6c; border:none; padding:12px 20px; border-radius:8px; font-weight:bold; cursor:pointer; width:100%;">
+                    Receber Agora
+                </button>
             </form>
         </div>
 
