@@ -55,13 +55,6 @@
             color: #ff5722;
             margin: 0 0 15px;
         }
-        .enunciado {
-            margin: 10px 0 15px;
-            font-weight: 500;
-            background-color: rgba(0, 0, 0, 0.3);
-            padding: 15px;
-            border-radius: 8px;
-        }
         .banca {
             font-size: 0.9em;
             background-color: rgba(255, 215, 0, 0.2);
@@ -122,6 +115,24 @@
             color: #ccc;
             font-size: 0.95em;
         }
+        input, button {
+            padding: 12px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 8px;
+            width: 100%;
+            font-size: 1em;
+        }
+        input[type="text"], input[type="email"] {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        button {
+            background: #ffd700;
+            color: #1a2a6c;
+            font-weight: bold;
+            cursor: pointer;
+        }
         .footer {
             text-align: center;
             padding: 30px;
@@ -129,28 +140,6 @@
             font-style: italic;
             font-size: 0.9em;
             color: #a1e8ff;
-        }
-        @media print {
-            @page {
-                size: A4 portrait;
-                margin: 1.5cm;
-            }
-            body {
-                -webkit-print-color-adjust: exact;
-                color-adjust: exact;
-                margin: 0;
-                padding: 0;
-            }
-            .container {
-                max-width: 100%;
-                margin: 0;
-                padding: 10px;
-                box-shadow: none;
-                border-radius: 0;
-            }
-            .erro {
-                page-break-inside: avoid;
-            }
         }
     </style>
 </head>
@@ -284,8 +273,33 @@
             <h3>📩 Receba Mais Materiais Gratuitos</h3>
             <p>Inscreva-se e receba atualizações com dicas, questões e padrões de banca diretamente no seu e-mail.</p>
 
-            <!-- FORMULÁRIO DO GOOGLE FORMS -->
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf1RAUJ56eIThoMlaeQJCWtiTWqdlEzjuQWXJlscOZc7Xc/viewform?embedded=true" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+            <form action="https://formspree.io/f/manbdbrg" method="POST">
+                <input 
+                    type="text" 
+                    name="nome" 
+                    placeholder="Seu nome completo" 
+                    required 
+                >
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Seu melhor e-mail" 
+                    required 
+                >
+                <button type="submit">Receber Agora</button>
+            </form>
+        </div>
+
+        <!-- BOTÃO DE DOWNLOAD DIRETO -->
+        <div class="form-container">
+            <h3>📥 Baixe o Guia Diretamente</h3>
+            <p>O arquivo será baixado diretamente do nosso servidor seguro.</p>
+            <a href="https://raw.githubusercontent.com/maureliosiqueira/Guia_TI_gratuito/main/Guia-de-TI-Gratuito.pdf" 
+               class="btn" 
+               download="Guia_de_TI_Gratuito.pdf" 
+               style="display: inline-block; background: #4fc3f7; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold;">
+                💾 Baixar o Guia Gratuito
+            </a>
         </div>
 
         <!-- LINK PARA A HOTMART -->
